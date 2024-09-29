@@ -32,7 +32,7 @@ UniEngineer brings **predictive project management**, **AI-driven decision-makin
 
 **2. What Makes UniEngineer Unique?**
 
-- **First AI-Integrated Engineering Platform**: We are the **first platform** to integrate advanced AI models to improve project management efficiency. Our AI models predict project delays, suggest task optimizations, and ensure resource allocation is always at its best.
+- **First AI-Integrated Engineering Platform**: We are the **first platform** to integrate advanced AI models like GPTX Neo & BERT to improve project management efficiency. Our AI models predict project delays, suggest task optimizations, and ensure resource allocation is always at its best.
   
 - **Real-Time, AI-Driven Collaboration**: Engineers across all disciplines (civil, mechanical, electrical, etc.) can collaborate on the same project simultaneously. Our platform provides **real-time synchronization** with instant updates, creating an experience **no other tool has matched**.
   
