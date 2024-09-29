@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>UNI | HOME PAGE</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="https://i.ibb.co/JrHmQpr/uni-high-resolution-logo-transparent.png" alt="" height="50px" width="50px">
+        </div>
+        <div class="nav-opt">
+            <ul>
+                <li><a class="home" href="index.html">HOME</a></li>
+                <li><a class="about" href="#">ABOUT</a></li>
+                <li><a class="features" href="#">FEATURES</a></li>
+                <li><a class="howitworks" href="#">HOW IT WORKS</a></li>
+                <li><a class="benifits" href="#">BENIFITS</a></li>
+                <li><a class="contact" href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="introduction">
+        <div class="intro-heading">
+        <h1 class="heading"><span>U</span>nified <span>E</span>ngineering <span>P</span>latform</h1>
+
+        <div class="sub-head">
+            <h3>Connecting engineers, streamlining projects, and building the future together.</h3>
+        </div>
+        <div class="intro-boxes">
+
+        <div class="get-started-box-client">
+            <h4 class="client-box-heading">Get Started as Client</h4>
+            <form id="client-form">
+                <div class="namec">
+                <p>Name :</p>
+                <input type="text" id="namec" placeholder="Name" width="500px"><br>
+            </div>
+            <div class="emailc">
+                <p>E-mail :</p>
+                <input type="email" id="emailc" placeholder="Email"><br>
+            </div>
+                <input type="submit" id="submitc" value="Get Started">
+            </form>
+            </div>
+            <div class="get-started-box-engineer">
+                    <h4 class="engineer-box-heading">Get Started as Engineer</h4>
+                <form id="engineer-form">
+                    <div class="namee">
+                    <p>Name :</p>
+                <input type="text" id="namee" placeholder="Name" textarea="200px"><br>
+            </div>
+            <div class="emaile">
+                <p>E-mail :</p>
+                <input type="email" id="emaile" placeholder="Email"><br>
+            </div>
+            
+                <input type="submit" id="submite" value="Get Started">
+            
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".burger");
+        const navOptions = document.querySelector(".nav-opt ul");
+        burger.addEventListener("click", () => {
+            navOptions.classList.toggle("active");
+        });
+        const clientForm = document.getElementById('client-form');
+        clientForm.addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            window.location.href = 'page.html';
+        });
+
+
+        const engineerForm = document.getElementById('engineer-form');
+        engineerForm.addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            window.location.href = 'eng.html'; 
+        });
+    });
+    </script>
+
+</script>
+</body>
+</html>

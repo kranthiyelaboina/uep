@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI - Engineer Collaboration Space</title>
+    <link rel="stylesheet" href="eng.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <span class="logo-icon"><i class="fas fa-cog"></i></span>
+                <span class="logo-text">
+                    <span class="logo-uni">UNI</span>
+                    <span class="logo-desc"> - UNIFIED ENGINEERING PLATFORM</span>
+                </span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="notifications">
+            <i class="fas fa-bell"></i>
+            <span class="notification-count">3</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Engineer Dashboard</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="section-content">
+                <div class="assigned-projects">
+                    <h3>Assigned Projects</h3>
+                    <ul class="project-list">
+                        <li class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="project-details">
+                                <h4>Project Title 1</h4>
+                                <p>Client: Client Name</p>
+                                <p>Start Date: DD/MM/YYYY</p>
+                                <p>Status: In Progress</p>
+                                <p>Deadline: DD/MM/YYYY</p>
+                            </div>
+                            <a href="#" class="btn view-project-btn">View Project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="available-projects">
+                    <h3>Available Projects</h3>
+                    <ul class="project-list">
+                        <li class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-city"></i>
+                            </div>
+                            <div class="project-details">
+                                <h4>Project Title 2</h4>
+                                <p>Required Disciplines: Discipline 1, Discipline 2</p>
+                                <p>Budget: $X,XXX</p>
+                                <p>Start Date: DD/MM/YYYY</p>
+                            </div>
+                            <a href="#" class="btn apply-btn">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Project Workspace</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="section-content">
+                <div class="project-files">
+                    <h3>Project Files</h3>
+                    <ul class="file-list">
+                        <li class="file-card">
+                            <div class="file-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="file-details">
+                                <p>File Name 1</p>
+                            </div>
+                            <a href="#" class="btn download-btn">Download</a>
+                        </li>                    </ul>
+                    <div class="upload-file">
+                        <input type="file" id="fileUpload">
+                        <label for="fileUpload" class="btn upload-btn">Upload File</label>
+                    </div>
+                </div>
+                <div class="project-timeline">
+                    <h3>Project Timeline</h3>
+                    <div class="milestone">
+                        <div class="milestone-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="milestone-details">
+                            <h4>Milestone 1</h4>
+                            <p>Due Date: DD/MM/YYYY</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tasks" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Task Management</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="section-content">
+                <div class="task-board">
+                    <div class="task-column">
+                        <h3>To Do</h3>
+                        <ul class="task-list" id="todoList">
+                            <li class="task-card" draggable="true">
+                                <div class="task-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="task-details">
+                                    <h4>Task 1</h4>
+                                    <p>Assigned to: Engineer Name</p>
+                                    <p>Due Date: DD/MM/YYYY</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="task-column">
+                        <h3>In Progress</h3>
+                        <ul class="task-list" id="inProgressList">
+                        </ul>
+                    </div>
+                    <div class="task-column">
+                        <h3>Completed</h3>
+                        <ul class="task-list" id="completedList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="messages" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Messages</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="section-content">
+                <div class="message-container">
+                    <div class="message-list">
+                        <ul>
+                            <li class="message">
+                                <div class="message-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="message-details">
+                                    <div class="message-header">
+                                        <span class="sender">Koushik</span>
+                                        <span class="timestamp">10:30 AM</span>
+                                    </div>
+                                    <div class="message-content">
+                                        <p>Hey, can you review the latest design changes?</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="message-input">
+                        <textarea placeholder="Type your message..."></textarea>
+                        <button class="btn send-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Engineer Profile</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="section-content">
+                <div class="profile-info">
+                    <div class="profile-picture-container">
+                        <img src="https://t4.ftcdn.net/jpg/06/29/70/17/360_F_629701706_MLzbqraLbTFUppqudeTxXsoVrL3cm3k3.jpg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <div class="profile-details">
+                        <h3>Kranthi</h3>
+                        <p>Electrical Engineer</p>
+                        <p>Experience: 5 years</p>
+                        <div class="badges">
+                            <span class="badge">Verified</span>
+                            <span class="badge">Top Performer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-edit">
+                    <h3>Edit Profile</h3>
+                    <form id="profileForm">
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+                        <label for="skills">Skills:</label>
+                        <input type="text" id="skills" placeholder="e.g., JavaScript, Python">
+
+                        <label for="experience">Experience:</label>
+                        <input type="text" id="experience" placeholder="e.g., 5 years">
+
+                        <label for="portfolio">Portfolio:</label>
+                        <input type="file" id="portfolio">
+
+                        <button type="submit" class="btn save-btn">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 UNI - Unified Engineering Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="eng.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url(image/uni_bg_img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+nav {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .nav-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-opt ul {
+    display: flex;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.nav-opt ul li {
+    margin-left: 30px;
+}
+
+.nav-opt ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-opt ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #3498db;
+    left: 0;
+    bottom: 0;
+    transition: width 0.4s ease;
+}
+
+.nav-opt ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-opt ul li a:hover {
+    color: #3498db;
+}
+
+.burger {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    color: #ecf0f1;
+    padding: 10px;
+}
+
+.introduction {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-heading h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.intro-heading span {
+    color: #e67e22;
+}
+
+.sub-head h3 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.intro-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.get-started-box-client, .get-started-box-engineer {
+    background-color: #ecf0f1;
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.get-started-box-client:hover, .get-started-box-engineer:hover {
+    transform: translateY(-10px);
+}
+
+.client-box-heading, .engineer-box-heading {
+    text-align: center;
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #bdc3c7;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #3498db;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .intro-heading h1 {
+        font-size: 35px;
+    }
+
+    .sub-head h3 {
+        font-size: 18px;
+    }
+
+    .get-started-box-client, .get-started-box-engineer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-opt ul {
+        position: absolute;
+        top: 80px;
+        left: -100%; 
+        background: #2C3E50;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .nav-opt ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    .intro-heading h1 {
+        font-size: 30px;
+    }
+
+    .sub-head h3 {
+        font-size: 16px;
+    }
+
+    .get-started-box-client, .get-started-box-engineer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        margin-left: 5px;
+    }
+
+    .intro-heading h1 {
+        font-size: 24px;
+    }
+
+    .sub-head h3 {
+        font-size: 14px;
+    }
+
+    .nav-opt ul li a {
+        font-size: 16px;
+    }
+
+    .intro-boxes {
+        flex-direction: column;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	
+	<div id="roleModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="roleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="roleModalLabel">Select Your Role</h5>
+	      </div>
+	      <div class="modal-body text-center">
+	        <p>Please select your role to continue:</p>
+	        <div class="d-flex justify-content-center">
+	          <button id="clientBtn" class="btn btn-primary m-2">Client</button>
+	          <button id="engineerBtn" class="btn btn-secondary m-2">Engineer</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	
+	<div class="container main-container">
+		<div class="d-flex justify-content-center h-100">
+			<div class="card">
+				<div class="card-header">
+					<h3>Sign In</h3>
+					<div class="d-flex justify-content-end social_icon">
+						<span><i class="fab fa-facebook-square"></i></span>
+						<span><i class="fab fa-google-plus-square"></i></span>
+						<span><i class="fab fa-twitter-square"></i></span>
+					</div>
+				</div>
+				<div class="card-body">
+					<form>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" class="form-control" placeholder="Username" required>
+						</div>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" class="form-control" placeholder="Password" required>
+						</div>
+						<div class="row align-items-center remember">
+							<input type="checkbox">Remember Me
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Login" class="btn float-right login_btn">
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<div class="d-flex justify-content-center links">
+						Don't have an account? -<a href="signup.html"> Sign Up</a>
+					</div>
+					<div class="d-flex justify-content-center">
+						<a href="#">Forgot your password?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	
+	
+	<script src="login.js"></script>
+</body>
+</html>

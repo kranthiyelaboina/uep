@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact - Kranthi Yelaboina</title>
+
+  <style>
+
+    body {
+
+      font-family: 'Open Sans', sans-serif;
+
+      background-color: #f4f4f4;
+
+      margin: 0;
+
+      padding: 0;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      height: 100vh;
+
+      overflow: hidden;
+
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    }
+
+    .container {
+
+      background: #000000;
+
+      padding: 30px;
+
+      border-radius: 15px;
+
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+      max-width: 600px;
+
+      text-align: center;
+
+      animation: fadeIn 1s ease-in-out;
+
+      position: relative;
+
+    }
+
+    .profile-pic {
+
+      width: 150px;
+
+      height: 150px;
+
+      border-radius: 50%;
+
+      overflow: hidden;
+
+      margin: 0 auto 20px;
+
+      animation: bounceIn 1s ease-in-out;
+
+      border: 5px solid #007acc;
+
+      background-color: white;
+
+    }
+
+    .profile-pic img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+    }
+
+    h1 {
+
+      font-size: 2.5em;
+
+      margin-bottom: 10px;
+
+      color: #007acc;
+
+      font-weight: 700;
+
+    }
+
+    p {
+
+      font-size: 1.2em;
+
+      color: #ccc;
+
+      line-height: 1.6;
+
+      margin-bottom: 20px;
+
+    }
+
+    .contact-details {
+
+      margin-top: 20px;
+
+      background: #444;
+
+      padding: 20px;
+
+      border-radius: 10px;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .contact-details p {
+
+      margin: 10px 0;
+
+      font-size: 1.1em;
+
+      color: #fff;
+
+    }
+
+    .contact-details p strong {
+
+      color: #007acc;
+
+    }
+
+    @keyframes fadeIn {
+
+      from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+      }
+
+    }
+
+    @keyframes bounceIn {
+
+      from {
+
+        opacity: 0;
+
+        transform: scale(0.5);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+      }
+
+    }
+
+    @keyframes slideIn {
+
+      from {
+
+        opacity: 0;
+
+        transform: translateX(-100%);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+      }
+
+    }
+
+    .container {
+
+      animation: slideIn 1s ease-in-out;
+
+    }
+
+    .background-animation {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      overflow: hidden;
+
+      z-index: -1;
+
+    }
+
+    .background-animation div {
+
+      position: absolute;
+
+      width: 60px;
+
+      height: 60px;
+
+      background: rgba(255, 255, 255, 0.1);
+
+      border-radius: 50%;
+
+      animation: move 10s infinite;
+
+    }
+
+    @keyframes move {
+
+      0% {
+
+        transform: translateY(0) translateX(0);
+
+      }
+
+      50% {
+
+        transform: translateY(-100px) translateX(100px);
+
+      }
+
+      100% {
+
+        transform: translateY(0) translateX(0);
+
+      }
+
+    }
+
+    footer{
+
+      color: white;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="background-animation">
+
+    <div style="top: 10%; left: 20%;"></div>
+
+    <div style="top: 40%; left: 60%;"></div>
+
+    <div style="top: 70%; left: 30%;"></div>
+
+    <div style="top: 20%; left: 80%;"></div>
+
+    <div style="top: 50%; left: 10%;"></div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="profile-pic">
+
+      <img src="https://i.ibb.co/JrHmQpr/uni-high-resolution-logo-transparent.png" alt="UNI" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
+
+    </div>
+
+    <h1>TECH FUZE</h1>
+
+    <p>Hello! we are the developes behind this platform. We created this site to bring together engineers from various disciplines to collaborate and innovate. Our passion for technology and engineering drives us to build solutions that make a difference.</p>
+
+    <div class="contact-details">
+
+      <p><strong>Email:</strong> contact@techfuze.com</p>
+
+      <p><strong>Location:</strong> Hyderabad, India</p>
+
+    </div>
+
+    <footer>copyright &#169;
+
+      2024 </footer>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
